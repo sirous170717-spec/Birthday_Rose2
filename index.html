@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎂 تولدت مبارک Rose</title>
+</head>
+<body>
+    <!-- ===== آهنگ ===== -->
+    <audio id="birthdaySong" loop>
+        <source src="https://uploadkon.ir/uploads/e6c120_26Majid-Razavi-Tavalod-320-.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicToggle" class="music-btn">🔊</button>
+
+    <!-- ===== برف / گلبرگ ریز (ایدۀ ۱) ===== -->
+    <div id="snowContainer"></div>
+
+    <!-- ===== بادکنک‌های شناور (ایدۀ ۲) ===== -->
+    <div class="balloon b1">🎈</div>
+    <div class="balloon b2">🎈</div>
+    <div class="balloon b3">🎈</div>
+
+    <!-- ===== ستاره‌ها ===== -->
+    <div class="stars"></div>
+
+    <div class="container">
+        <div class="glow-ring"></div>
+
+        <div class="birthday-card">
+            <!-- ===== کیک با ۲ شمع (۱۳ سالگی - ایدۀ ۹) ===== -->
+            <div class="cake-3d">
+                <div class="cake-layer layer1"></div>
+                <div class="cake-layer layer2"></div>
+                <div class="cake-layer layer3"></div>
+                <div class="cake-frosting"></div>
+                
+                <!-- شمع شماره ۱ -->
+                <div class="candle candle-1" id="candle1">
+                    <div class="flame"></div>
+                    <div class="smoke"></div>
+                    <span class="candle-number">۱</span>
+                </div>
+                
+                <!-- شمع شماره ۳ -->
+                <div class="candle candle-3" id="candle3">
+                    <div class="flame"></div>
+                    <div class="smoke"></div>
+                    <span class="candle-number">۳</span>
+                </div>
+
+                <div class="sprinkles">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <!-- ===== قاب پولاروید با عکس (ایدۀ ۶) ===== -->
+            <div class="polaroid-frame">
+                <img src="https://uploadkon.ir/uploads/140020_26IMG-20260620-174736-659.jpg" 
+                     alt="تولد مبارک" 
+                     loading="lazy"
+                     onerror="this.src='https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500&h=350&fit=crop&crop=center'">
+                <div class="caption">
+                    <span>🎂 تولدت مبارک Rose</span>
+                </div>
+
+                <!-- ۴ گل لیلیوم در گوشه‌های قاب -->
+                <div class="lily-corner lily-tl">
+                    <div class="mini-lily">
+                        <div class="mini-petal m1"></div>
+                        <div class="mini-petal m2"></div>
+                        <div class="mini-petal m3"></div>
+                        <div class="mini-petal m4"></div>
+                        <div class="mini-petal m5"></div>
+                        <div class="mini-petal m6"></div>
+                        <div class="mini-stamen"></div>
+                    </div>
+                </div>
+                <div class="lily-corner lily-tr">
+                    <div class="mini-lily">
+                        <div class="mini-petal m1"></div>
+                        <div class="mini-petal m2"></div>
+                        <div class="mini-petal m3"></div>
+                        <div class="mini-petal m4"></div>
+                        <div class="mini-petal m5"></div>
+                        <div class="mini-petal m6"></div>
+                        <div class="mini-stamen"></div>
+                    </div>
+                </div>
+                <div class="lily-corner lily-bl">
+                    <div class="mini-lily">
+                        <div class="mini-petal m1"></div>
+                        <div class="mini-petal m2"></div>
+                        <div class="mini-petal m3"></div>
+                        <div class="mini-petal m4"></div>
+                        <div class="mini-petal m5"></div>
+                        <div class="mini-petal m6"></div>
+                        <div class="mini-stamen"></div>
+                    </div>
+                </div>
+                <div class="lily-corner lily-br">
+                    <div class="mini-lily">
+                        <div class="mini-petal m1"></div>
+                        <div class="mini-petal m2"></div>
+                        <div class="mini-petal m3"></div>
+                        <div class="mini-petal m4"></div>
+                        <div class="mini-petal m5"></div>
+                        <div class="mini-petal m6"></div>
+                        <div class="mini-stamen"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== متن تایپ‌رایتر (ایدۀ ۷) ===== -->
+            <div class="typing-wrapper">
+                <p id="typingText">🌹 تولدت مبارک بهترین! ✨</p>
+            </div>
+
+            <!-- ===== متن‌ها ===== -->
+            <div class="main-text">
+                <span class="greeting">تولدت</span>
+                <span class="highlight">مبارک</span>
+                <span class="name">Rose 🌹</span>
+            </div>
+
+            <div class="message-box">
+                <p class="line1">امیدوارم هر روزت</p>
+                <p class="line2">پر از لبخند، آرامش</p>
+                <p class="line3">و اتفاق‌های قشنگ باشه</p>
+            </div>
+
+            <div class="initials">
+                <span class="letter-s">S</span>
+                <span class="heart">❤️</span>
+                <span class="letter-r">R</span>
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-primary" onclick="fireEmoji()">🎆 جشن بگیر!</button>
+                <button class="btn btn-secondary" onclick="showWish()">💝 آرزو کن</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== افکت جرقه (ایدۀ ۳) ===== -->
+    <div id="sparkleContainer"></div>
+</body>
+</html>
